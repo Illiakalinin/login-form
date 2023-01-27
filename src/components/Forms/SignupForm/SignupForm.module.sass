@@ -1,14 +1,28 @@
 .container
-  
+  // display: flex
+  // flex: 1 0 auto
+  // flex-flow: row wrap
+  max-width: 595px
+  margin-top: 180px
+  padding: 10px 20px 30px
+
 .form
   display: flex
   flex-flow: row wrap
-  // flex-direction: column
-   min-width: 321px
-  max-width: 600px
-  // width: 100%
-  margin: 0 auto
-  padding: 10px 20px 30px
+  flex: 1 0 auto
+  width: 100%
+
+
+  label
+    // display: flex
+    // justify-content: space-between
+    padding: 0 12px 19px
+    min-width: 285px
+    // flex-grow: 2
+  
+    position: relative
+    border: none
+    border-radius: 5px
 
 .account
   margin:20px auto 10px
@@ -22,21 +36,10 @@
   line-height: 27px
   margin: 11px auto 13px auto
 
-
-label
-  display: flex
-  justify-content: space-between
-  align-items: baseline
- 
-  margin: 15px
-  position: relative
-  border: none
-  border-radius: 10px
-
 .error
   position: absolute
   top: 100%
-  // right: 0
+  right: 0
   padding: 3px
   width: 100%
   color: white
@@ -59,7 +62,7 @@ label
   border: 2px solid red
   border-radius: 5px
 
-.loginBtn
+button
   background-color: #28d2d0
   color: white
   height: 64px

@@ -15,7 +15,6 @@ function SignupForm () {
   };
 
   const handleSubmit = (values, formikBag) => {
-    // console.log('Submit form with values:', values);
     formikBag.resetForm();
   };
 
@@ -75,9 +74,7 @@ function SignupForm () {
           placeholder='Password Confirmation'
           classes={classes}
         />
-        <button className={styles.loginBtn} type='submit'>
-          Create your account
-        </button>
+        <button type='submit'>Create your account</button>
       </Form>
     </Formik>
   );

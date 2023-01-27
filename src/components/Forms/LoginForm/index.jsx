@@ -16,6 +16,7 @@ function LoginForm () {
     input: styles.input,
     valid: styles.valid,
     invalid: styles.invalid,
+    // label: styles.label,
   };
 
   return (
@@ -28,8 +29,6 @@ function LoginForm () {
       <Form className={styles.form}>
         <h2 className={styles.account}>LOGIN TO YOUR ACCOUNT</h2>
         <Input
-          // className={styles.label}
-          // label='Email:'
           type='email'
           name='email'
           placeholder='Email adress'
@@ -37,7 +36,6 @@ function LoginForm () {
           classes={classes}
         />
         <Input
-          // label='Password:'
           type='password'
           name='password'
           placeholder='Password'
