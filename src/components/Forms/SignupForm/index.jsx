@@ -33,10 +33,6 @@ function SignupForm () {
       validationSchema={LOGIN_VALIDATION_SCHEMA}
     >
       <Form className={styles.form}>
-        <h2 className={styles.account}>CREATE AN ACCOUNT</h2>
-        <h4 className={styles.info}>
-          We always keep your name and email adress private.
-        </h4>
         <Input
           type='text'
           name='firstName'

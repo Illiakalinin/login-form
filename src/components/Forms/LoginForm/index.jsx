@@ -16,7 +16,6 @@ function LoginForm () {
     input: styles.input,
     valid: styles.valid,
     invalid: styles.invalid,
-    // label: styles.label,
   };
 
   return (
@@ -27,11 +26,10 @@ function LoginForm () {
       validationSchema={LOGIN_VALIDATION_SCHEMA}
     >
       <Form className={styles.form}>
-        <h2 className={styles.account}>LOGIN TO YOUR ACCOUNT</h2>
         <Input
           type='email'
           name='email'
-          placeholder='Email adress'
+          placeholder='Email Adress'
           autoFocus
           classes={classes}
         />

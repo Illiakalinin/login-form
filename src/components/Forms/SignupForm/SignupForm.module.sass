@@ -1,73 +1,68 @@
-.container
-  // display: flex
-  // flex: 1 0 auto
-  // flex-flow: row wrap
-  max-width: 595px
-  margin-top: 180px
-  padding: 10px 20px 30px
-
-.form
+.formContainer
   display: flex
-  flex-flow: row wrap
-  flex: 1 0 auto
-  width: 100%
+  flex-direction: column
+  justify-content: center
 
+  .form
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    max-width: 600px  
+    margin: 0 auto
+    padding: 10px 20px 30px
+
+  .account
+    margin:20px auto 10px
+    font-size: 30px
+    color: white
+    padding: 0 25px
+
+  .info
+    color: white
+    font-size: 18px
+    font-weight: 500
+    line-height: 27px
+    margin: 11px auto 13px auto
+    padding: 0 25px
 
   label
-    // display: flex
-    // justify-content: space-between
-    padding: 0 12px 19px
+    display: flex
     min-width: 285px
-    // flex-grow: 2
-  
+    margin: 11px 0
     position: relative
-    border: none
+    border-radius: 10px
+
+  .error
+    position: absolute
+    top: 100%
+    width: 100%
+    color: white
+    border: 1px solid red
+    border-radius: 5px
+    text-align: center
+
+  .input
+    padding: 23px
+    width: 100%
+    font-size: 16px
+    border: 2px solid white
     border-radius: 5px
 
-.account
-  margin:20px auto 10px
-  font-size: 30px
-  color: white
+  .valid
+    border: 2px solid green
+    border-radius: 5px
 
-.info
-  color: white
-  font-size: 18px
-  font-weight: 500
-  line-height: 27px
-  margin: 11px auto 13px auto
+  .invalid
+    border: 2px solid red
+    border-radius: 5px
 
-.error
-  position: absolute
-  top: 100%
-  right: 0
-  padding: 3px
-  width: 100%
-  color: white
-  border: 1px solid red
-  text-align: center
-
-.input
-  padding: 21px
-  width: 100%
-  font-size: 16px
-  border: none
-  border-radius: 5px
-
-
-.valid
-  border: none
-  border-radius: 5px
-
-.invalid
-  border: 2px solid red
-  border-radius: 5px
-
-button
-  background-color: #28d2d0
-  color: white
-  height: 64px
-  width: 100%
-  border: 0px
-  border-radius: 5px
-  font-size: 16px
-  font-weight: 500
+  button
+    background-color: #28d2d0
+    color: white
+    height: 64px
+    width: 100%
+    border: 0px
+    border-radius: 5px
+    font-size: 16px
+    font-weight: 500
+    margin: 15px 0
