@@ -66,7 +66,7 @@ function SignupForm () {
         />
         <Input
           type='password'
-          name='passwordConfirm'
+          name='password'
           placeholder='Password Confirmation'
           classes={classes}
         />

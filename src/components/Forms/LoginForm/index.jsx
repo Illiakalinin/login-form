@@ -1,4 +1,4 @@
-import { Formik, Form } from 'formik';
+import { Formik, Field, Form } from 'formik';
 import React from 'react';
 import { LOGIN_VALIDATION_SCHEMA } from '../../../utils/validationSchemas';
 import Input from '../Input';
@@ -39,6 +39,10 @@ function LoginForm () {
           placeholder='Password'
           classes={classes}
         />
+        <label className={styles.checkbox}>
+          <Field type='checkbox' name='toggle' />
+          Remember me
+        </label>
         <button type='submit'>LOGIN</button>
       </Form>
     </Formik>
